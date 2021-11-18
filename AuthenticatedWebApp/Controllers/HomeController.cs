@@ -29,7 +29,7 @@ namespace AuthenticatedWebApp.Controllers
             return View();
         }
 
-       
+        [Authorize]
         public IActionResult Secret()
         {
             return View();
