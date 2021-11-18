@@ -1,4 +1,5 @@
 ﻿using AuthenticatedWebApp.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -24,6 +25,12 @@ namespace AuthenticatedWebApp.Controllers
         }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+       
+        public IActionResult Secret()
         {
             return View();
         }
